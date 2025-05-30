@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeLab - Learn HTML, CSS, and JavaScript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 3px solid #00ffcc;
+        }
+
+        h1,
+        h2 {
+            color: #00ffcc;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #fff;
+        }
+
+        nav a {
+            color: #ccc;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00ffcc;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: #00ffcc;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #00ffcc;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #00ddb0;
+        }
+
+        .intro {
+            margin-bottom: 40px;
+        }
+
+        .intro p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .feature-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .feature-item {
+            background-color: #1e1e1e;
+            padding: 20px;
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .feature-item:hover {
+            transform: scale(1.05);
+        }
+
+        .feature-item h3 {
+            color: #00ffcc;
+        }
+
+        .feature-item p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #ccc;
+        }
+
+        .feature-item a {
+            color: #00ffcc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .feature-item a:hover {
+            color: #00ddb0;
+        }
+
+        @media (max-width: 768px) {
+            .feature-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to CodeLab</h1>
+        <h2>Your Ultimate Destination to Learn Web Development</h2>
+        <p>Start your journey with HTML, CSS, and JavaScript tutorials, and build your coding skills from scratch!</p>
+        <nav>
+            <a href="html.html">HTML</a>
+            <a href="css.html">CSS</a>
+            <a href="javascript.html">JavaScript</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>About CodeLab</h2>
+            <p>
+                CodeLab is an interactive web platform designed to teach you web development from the ground up. Whether
+                you are a complete beginner or looking to refine your skills, CodeLab is here to help you with step-by-step
+                tutorials and hands-on practice.
+            </p>
+            <p>
+                Our goal is to provide clear and easy-to-understand resources for learning HTML, CSS, and JavaScript. With
+                live code editors for each language, you can write, test, and run your code directly in your browser, making
+                the learning process engaging and interactive.
+            </p>
+            <a href="html.html" class="button">Start Learning HTML</a>
+        </section>
+
+        <section>
+            <h2>Why Choose CodeLab?</h2>
+            <p>Here are just a few reasons why CodeLab is the perfect place for your coding journey:</p>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3>Interactive Learning</h3>
+                    <p>Practice coding directly in your browser with our built-in code editors for HTML, CSS, and JavaScript.</p>
+                    <a href="html.html">Learn More</a>
+                </div>
+                <div class="feature-item">
+                    <h3>Step-by-Step Tutorials</h3>
+                    <p>Our tutorials are structured to guide you through every concept, from basic syntax to advanced topics.</p>
+                    <a href="css.html">Explore CSS</a>
+                </div>
+                <div class="feature-item">
+                    <h3>Real-Time Testing</h3>
+                    <p>Test your code instantly and see the results in real-time, helping you learn faster and with confidence.</p>
+                    <a href="javascript.html">Start JavaScript</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>What You Will Learn</h2>
+            <h3>HTML</h3>
+            <p>
+                HTML (HyperText Markup Language) is the foundation of web development. Learn how to structure web pages,
+                add elements like headings, paragraphs, images, forms, and more.
+            </p>
+            <a href="html.html" class="button">Learn HTML</a>
+
+            <h3>CSS</h3>
+            <p>
+                CSS (Cascading Style Sheets) brings your HTML to life! Learn how to style your pages, work with layouts,
+                and create responsive designs using Flexbox and CSS Grid.
+            </p>
+            <a href="css.html" class="button">Learn CSS</a>
+
+            <h3>JavaScript</h3>
+            <p>
+                JavaScript is the language of interactivity. Learn how to manipulate the DOM, create functions, handle
+                events, and build dynamic web pages.
+            </p>
+            <a href="javascript.html" class="button">Learn JavaScript</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CodeLab. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
